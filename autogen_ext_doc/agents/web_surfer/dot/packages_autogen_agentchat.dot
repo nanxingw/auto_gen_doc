@@ -1,0 +1,25 @@
+digraph "packages_autogen_agentchat" {
+rankdir=BT
+charset="utf-8"
+"web_surfer" [color="black", label=<web_surfer>, shape="box", style="solid"];
+"web_surfer._events" [color="black", label=<web_surfer._events>, shape="box", style="solid"];
+"web_surfer._multimodal_web_surfer" [color="black", label=<web_surfer._multimodal_web_surfer>, shape="box", style="solid"];
+"web_surfer._prompts" [color="black", label=<web_surfer._prompts>, shape="box", style="solid"];
+"web_surfer._set_of_mark" [color="black", label=<web_surfer._set_of_mark>, shape="box", style="solid"];
+"web_surfer._tool_definitions" [color="black", label=<web_surfer._tool_definitions>, shape="box", style="solid"];
+"web_surfer._types" [color="black", label=<web_surfer._types>, shape="box", style="solid"];
+"web_surfer._utils" [color="black", label=<web_surfer._utils>, shape="box", style="solid"];
+"web_surfer.playwright_controller" [color="black", label=<web_surfer.playwright_controller>, shape="box", style="solid"];
+"web_surfer" -> "web_surfer._multimodal_web_surfer" [arrowhead="open", arrowtail="none"];
+"web_surfer" -> "web_surfer.playwright_controller" [arrowhead="open", arrowtail="none"];
+"web_surfer._multimodal_web_surfer" -> "web_surfer._events" [arrowhead="open", arrowtail="none"];
+"web_surfer._multimodal_web_surfer" -> "web_surfer._prompts" [arrowhead="open", arrowtail="none"];
+"web_surfer._multimodal_web_surfer" -> "web_surfer._set_of_mark" [arrowhead="open", arrowtail="none"];
+"web_surfer._multimodal_web_surfer" -> "web_surfer._tool_definitions" [arrowhead="open", arrowtail="none"];
+"web_surfer._multimodal_web_surfer" -> "web_surfer._types" [arrowhead="open", arrowtail="none"];
+"web_surfer._multimodal_web_surfer" -> "web_surfer._utils" [arrowhead="open", arrowtail="none"];
+"web_surfer._multimodal_web_surfer" -> "web_surfer.playwright_controller" [arrowhead="open", arrowtail="none"];
+"web_surfer._set_of_mark" -> "web_surfer._types" [arrowhead="open", arrowtail="none"];
+"web_surfer._utils" -> "web_surfer._types" [arrowhead="open", arrowtail="none"];
+"web_surfer.playwright_controller" -> "web_surfer._types" [arrowhead="open", arrowtail="none"];
+}

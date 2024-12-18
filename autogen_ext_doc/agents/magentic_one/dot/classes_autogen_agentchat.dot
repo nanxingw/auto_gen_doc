@@ -1,0 +1,5 @@
+digraph "classes_autogen_agentchat" {
+rankdir=BT
+charset="utf-8"
+"magentic_one._magentic_one_coder_agent.MagenticOneCoderAgent" [color="black", fontcolor="black", label=<{MagenticOneCoderAgent|<br ALIGN="LEFT"/>|}>, shape="record", style="solid"];
+}

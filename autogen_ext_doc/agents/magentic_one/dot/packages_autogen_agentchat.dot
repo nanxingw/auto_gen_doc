@@ -1,0 +1,7 @@
+digraph "packages_autogen_agentchat" {
+rankdir=BT
+charset="utf-8"
+"magentic_one" [color="black", label=<magentic_one>, shape="box", style="solid"];
+"magentic_one._magentic_one_coder_agent" [color="black", label=<magentic_one._magentic_one_coder_agent>, shape="box", style="solid"];
+"magentic_one" -> "magentic_one._magentic_one_coder_agent" [arrowhead="open", arrowtail="none"];
+}

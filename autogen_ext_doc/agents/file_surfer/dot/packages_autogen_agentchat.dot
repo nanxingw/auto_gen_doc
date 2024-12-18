@@ -1,0 +1,11 @@
+digraph "packages_autogen_agentchat" {
+rankdir=BT
+charset="utf-8"
+"file_surfer" [color="black", label=<file_surfer>, shape="box", style="solid"];
+"file_surfer._file_surfer" [color="black", label=<file_surfer._file_surfer>, shape="box", style="solid"];
+"file_surfer._markdown_file_browser" [color="black", label=<file_surfer._markdown_file_browser>, shape="box", style="solid"];
+"file_surfer._tool_definitions" [color="black", label=<file_surfer._tool_definitions>, shape="box", style="solid"];
+"file_surfer" -> "file_surfer._file_surfer" [arrowhead="open", arrowtail="none"];
+"file_surfer._file_surfer" -> "file_surfer._markdown_file_browser" [arrowhead="open", arrowtail="none"];
+"file_surfer._file_surfer" -> "file_surfer._tool_definitions" [arrowhead="open", arrowtail="none"];
+}

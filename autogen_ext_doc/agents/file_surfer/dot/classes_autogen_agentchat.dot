@@ -1,0 +1,7 @@
+digraph "classes_autogen_agentchat" {
+rankdir=BT
+charset="utf-8"
+"file_surfer._file_surfer.FileSurfer" [color="black", fontcolor="black", label=<{FileSurfer|DEFAULT_DESCRIPTION : str<br ALIGN="LEFT"/>DEFAULT_SYSTEM_MESSAGES : list<br ALIGN="LEFT"/>produced_message_types<br ALIGN="LEFT"/>|on_messages(messages: Sequence[ChatMessage], cancellation_token: CancellationToken): Response<br ALIGN="LEFT"/>on_reset(cancellation_token: CancellationToken): None<br ALIGN="LEFT"/>}>, shape="record", style="solid"];
+"file_surfer._markdown_file_browser.MarkdownFileBrowser" [color="black", fontcolor="black", label=<{MarkdownFileBrowser|find_on_page_query : NoneType<br ALIGN="LEFT"/>find_on_page_viewport : NoneType<br ALIGN="LEFT"/>history : List[Tuple[str, float]]<br ALIGN="LEFT"/>page_content<br ALIGN="LEFT"/>page_title : Optional[str]<br ALIGN="LEFT"/>path<br ALIGN="LEFT"/>viewport<br ALIGN="LEFT"/>viewport_current_page : int<br ALIGN="LEFT"/>viewport_pages : List[Tuple[int, int]], list<br ALIGN="LEFT"/>viewport_size : Union[int, None]<br ALIGN="LEFT"/>|find_next(): Union[str, None]<br ALIGN="LEFT"/>find_on_page(query: str): Union[str, None]<br ALIGN="LEFT"/>open_path(path: str): str<br ALIGN="LEFT"/>page_down(): None<br ALIGN="LEFT"/>page_up(): None<br ALIGN="LEFT"/>set_path(path: str): None<br ALIGN="LEFT"/>}>, shape="record", style="solid"];
+"file_surfer._markdown_file_browser.MarkdownFileBrowser" -> "file_surfer._file_surfer.FileSurfer" [arrowhead="diamond", arrowtail="none", fontcolor="green", label="_browser", style="solid"];
+}
