@@ -1,0 +1,8 @@
+digraph "packages_autogen_ext" {
+rankdir=BT
+charset="utf-8"
+"openai" [color="black", label=<openai>, shape="box", style="solid"];
+"openai._openai_assistant_agent" [color="black", label=<openai._openai_assistant_agent>, shape="box", style="solid"];
+"openai" -> "openai._openai_assistant_agent" [arrowhead="open", arrowtail="none"];
+"openai._openai_assistant_agent" -> "openai" [arrowhead="open", arrowtail="none"];
+}

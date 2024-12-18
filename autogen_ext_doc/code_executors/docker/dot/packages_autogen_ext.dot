@@ -1,0 +1,8 @@
+digraph "packages_autogen_ext" {
+rankdir=BT
+charset="utf-8"
+"docker" [color="black", label=<docker>, shape="box", style="solid"];
+"docker._docker_code_executor" [color="black", label=<docker._docker_code_executor>, shape="box", style="solid"];
+"docker" -> "docker._docker_code_executor" [arrowhead="open", arrowtail="none"];
+"docker._docker_code_executor" -> "docker" [arrowhead="open", arrowtail="none"];
+}

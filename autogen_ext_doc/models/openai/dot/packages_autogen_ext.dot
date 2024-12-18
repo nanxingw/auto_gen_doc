@@ -1,0 +1,11 @@
+digraph "packages_autogen_ext" {
+rankdir=BT
+charset="utf-8"
+"autogen_ext.models.openai" [color="black", label=<autogen_ext.models.openai>, shape="box", style="solid"];
+"autogen_ext.models.openai._model_info" [color="black", label=<autogen_ext.models.openai._model_info>, shape="box", style="solid"];
+"autogen_ext.models.openai._openai_client" [color="black", label=<autogen_ext.models.openai._openai_client>, shape="box", style="solid"];
+"autogen_ext.models.openai.config" [color="black", label=<autogen_ext.models.openai.config>, shape="box", style="solid"];
+"autogen_ext.models.openai" -> "autogen_ext.models.openai._openai_client" [arrowhead="open", arrowtail="none"];
+"autogen_ext.models.openai" -> "autogen_ext.models.openai.config" [arrowhead="open", arrowtail="none"];
+"autogen_ext.models.openai._openai_client" -> "autogen_ext.models.openai.config" [arrowhead="open", arrowtail="none"];
+}

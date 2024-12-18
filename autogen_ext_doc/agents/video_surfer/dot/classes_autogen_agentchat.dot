@@ -1,0 +1,5 @@
+digraph "classes_autogen_agentchat" {
+rankdir=BT
+charset="utf-8"
+"video_surfer._video_surfer.VideoSurfer" [color="black", fontcolor="black", label=<{VideoSurfer|DEFAULT_DESCRIPTION : str<br ALIGN="LEFT"/>DEFAULT_SYSTEM_MESSAGE : str<br ALIGN="LEFT"/>|vs_transribe_video_screenshot(video_path: str, timestamp: float): str<br ALIGN="LEFT"/>}>, shape="record", style="solid"];
+}

@@ -1,0 +1,7 @@
+digraph "classes_autogen_ext" {
+rankdir=BT
+charset="utf-8"
+"azure._azure_container_code_executor.ACADynamicSessionsCodeExecutor" [color="black", fontcolor="black", label=<{ACADynamicSessionsCodeExecutor|FUNCTION_PROMPT_TEMPLATE : ClassVar[str]<br ALIGN="LEFT"/>SUPPORTED_LANGUAGES : ClassVar[List[str]]<br ALIGN="LEFT"/>functions<br ALIGN="LEFT"/>functions_module<br ALIGN="LEFT"/>timeout<br ALIGN="LEFT"/>work_dir<br ALIGN="LEFT"/>|download_files(files: List[Union[Path, str]], cancellation_token: CancellationToken): List[str]<br ALIGN="LEFT"/>execute_code_blocks(code_blocks: List[CodeBlock], cancellation_token: CancellationToken): CodeResult<br ALIGN="LEFT"/>format_functions_for_prompt(prompt_template: str): str<br ALIGN="LEFT"/>get_available_packages(cancellation_token: CancellationToken): set[str]<br ALIGN="LEFT"/>get_file_list(cancellation_token: CancellationToken): List[str]<br ALIGN="LEFT"/>restart(): None<br ALIGN="LEFT"/>upload_files(files: List[Union[Path, str]], cancellation_token: CancellationToken): None<br ALIGN="LEFT"/>}>, shape="record", style="solid"];
+"azure._azure_container_code_executor.TokenProvider" [color="black", fontcolor="black", label=<{TokenProvider|<br ALIGN="LEFT"/>|get_token(): AccessToken<br ALIGN="LEFT"/>}>, shape="record", style="solid"];
+"azure._azure_container_code_executor.TokenProvider" -> "azure._azure_container_code_executor.ACADynamicSessionsCodeExecutor" [arrowhead="odiamond", arrowtail="none", fontcolor="green", label="_credential", style="solid"];
+}

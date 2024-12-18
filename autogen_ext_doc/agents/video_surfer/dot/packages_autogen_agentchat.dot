@@ -1,0 +1,9 @@
+digraph "packages_autogen_agentchat" {
+rankdir=BT
+charset="utf-8"
+"video_surfer" [color="black", label=<video_surfer>, shape="box", style="solid"];
+"video_surfer._video_surfer" [color="black", label=<video_surfer._video_surfer>, shape="box", style="solid"];
+"video_surfer.tools" [color="black", label=<video_surfer.tools>, shape="box", style="solid"];
+"video_surfer" -> "video_surfer._video_surfer" [arrowhead="open", arrowtail="none"];
+"video_surfer._video_surfer" -> "video_surfer.tools" [arrowhead="open", arrowtail="none"];
+}

@@ -1,0 +1,7 @@
+digraph "packages_autogen_ext" {
+rankdir=BT
+charset="utf-8"
+"azure" [color="black", label=<azure>, shape="box", style="solid"];
+"azure._azure_container_code_executor" [color="black", label=<azure._azure_container_code_executor>, shape="box", style="solid"];
+"azure" -> "azure._azure_container_code_executor" [arrowhead="open", arrowtail="none"];
+}
