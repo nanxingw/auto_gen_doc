@@ -1,7 +1,19 @@
 # **Messages 模块文档**
 
+---
+
 ## **1. 模块概述**
+
 `messages` 模块定义了在代理之间通信时使用的各种消息类型。这些消息类型是代理的核心交互手段，所有消息类型都继承自 `BaseMessage`。
+
+**总体介绍：**
+1. **`BaseMessage`**：所有消息类型的基类，定义了通用字段和属性。
+2. **`TextMessage`**：表示纯文本消息，最常用的消息类型。
+3. **`MultiModalMessage`**：支持多媒体（如文本和图像）的消息类型。
+4. **`StopMessage`**：用于表示终止会话的消息。
+5. **`HandoffMessage`**：用于会话交接的消息，目标是另一个代理。
+6. **`ToolCallMessage`**：用于代理请求工具调用的消息。
+7. **`ToolCallResultMessage`**：用于反馈工具调用结果的消息。
 
 **主要功能：**
 - 规范消息格式。
@@ -11,6 +23,7 @@
 ---
 
 ## **2. 类：BaseMessage**
+
 ### **描述**
 `BaseMessage` 是所有消息类型的基类，定义了消息的通用字段和属性。
 
@@ -30,6 +43,7 @@
 ---
 
 ## **3. 类：TextMessage**
+
 ### **描述**
 `TextMessage` 表示一个纯文本消息，最常用的消息类型。
 
@@ -46,6 +60,7 @@
 ---
 
 ## **4. 类：MultiModalMessage**
+
 ### **描述**
 `MultiModalMessage` 表示包含多种媒体形式（如文本、图像）的消息。
 
@@ -62,6 +77,7 @@
 ---
 
 ## **5. 类：StopMessage**
+
 ### **描述**
 `StopMessage` 表示请求终止会话的消息，用于中断代理间的交互。
 
@@ -78,6 +94,7 @@
 ---
 
 ## **6. 类：HandoffMessage**
+
 ### **描述**
 `HandoffMessage` 表示请求将会话交接给另一个代理的消息。
 
@@ -98,6 +115,7 @@
 ---
 
 ## **7. 类：ToolCallMessage**
+
 ### **描述**
 `ToolCallMessage` 表示调用工具的消息，用于代理请求外部工具的协助。
 
@@ -114,6 +132,7 @@
 ---
 
 ## **8. 类：ToolCallResultMessage**
+
 ### **描述**
 `ToolCallResultMessage` 表示工具调用结果的消息，用于反馈工具调用的结果。
 
@@ -130,6 +149,7 @@
 ---
 
 ## **9. 类型别名**
+
 ### **ChatMessage**
 - **定义**：`Annotated[TextMessage | MultiModalMessage | StopMessage | HandoffMessage, Field(discriminator="type")]`  
 - **描述**：代理间通信的常用消息类型的集合。
@@ -141,6 +161,7 @@
 ---
 
 ## **10. 模块导出**
+
 `messages` 模块通过 `__all__` 导出以下内容：
 - `BaseMessage`
 - `TextMessage`
@@ -155,6 +176,7 @@
 ---
 
 ## **依赖关系总结**
+
 1. **工具支持**：  
    - `ToolCallMessage` 和 `ToolCallResultMessage` 依赖于工具调用功能（`FunctionCall` 和 `FunctionExecutionResult`）。
    
@@ -167,6 +189,7 @@
 ---
 
 ## **模块使用场景**
+
 - **消息传递**：  
   - `TextMessage` 和 `MultiModalMessage` 是代理之间的主要通信形式。
   
@@ -176,5 +199,4 @@
 - **会话控制**：  
   - `StopMessage` 和 `HandoffMessage` 控制会话的终止和交接。
 
-通过统一的消息格式，`messages` 模块为代理间的高效通信提供了基础支持。
 
