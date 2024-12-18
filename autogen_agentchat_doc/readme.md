@@ -39,5 +39,5 @@
 ---
 
 # **3. 文档结构**
-每个文件夹分别对应着autogen_agentchat源项目下的文件夹，所对文件夹文档和UML图在该文件夹下
+每个文件夹分别对应着autogen_agentchat源项目下的文件夹，但对magentic_one单独做了文档，所对文件夹文档和UML图均在对应文件夹下
 
